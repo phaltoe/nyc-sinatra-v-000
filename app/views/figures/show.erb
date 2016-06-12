@@ -1,6 +1,6 @@
 <h1><%= @figure.name %></h1>
 
-<h5>Title: <%= @figure.titles.collect(&:name).join%></h6>
+<h5>Title: <%= @figure.titles.collect(&:name).join%></h5>
 <h6>Landmarks: <%= @figure.landmarks.collect(&:name).join(", ") %></h6>
 
 <form action="/figures/<%= @figure.id %>/edit">
